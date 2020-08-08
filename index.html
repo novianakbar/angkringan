@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="css/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/onsenui.min.css">
+    <link rel="stylesheet" href="css/onsen-css-components.min.css">
+    <script src="js/onsenui.min.js"></script>
+  </head>
+  <body>
+  <ons-page>
+        <div class="profile" style="height: 100%; padding: 1px 0 0 0;"><br>
+          <div class="card__title card--material__title" style="text-align: center;">
+            <strong style="color: #0076ff">PEMESANAN MAKANAN</strong>
+          </div>
+            <div class="profilimgs">
+              <img class="imgs" src="Aplikasi.png">
+            </div>
+            <div id="inputt" style="text-align: center; margin-top: 30px;">
+              <p>
+                <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+              </p>
+              <p>
+                <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+              </p>
+              <p style="margin-top: 30px;">
+                <ons-button onclick="login()">Masuk</ons-button>
+                <ons-button onclick="pesan()">Pesan Makanan</ons-button>
+                <div id="loading"></div>
+              </p>
+            </div>
+        </div>
+        <style>
+                .expan{
+                    background-color: #fff;
+                }
+      
+                .profilimgs {
+                  margin: 30px auto 40px;
+                  width: 60%;
+                }
+      
+                .profile {
+                    background-size: 100%;
+                    background-attachment: fixed;
+                    border: 1px solid #999;
+                }
+            
+                .profile > img {
+                    display: block;
+                    max-width: 100%;
+                }
+
+                ons-list-item {
+                    color: #444;
+                }
+                .imgs{
+                    width: 100%;
+                    border: 10px;
+                }
+                .flex-container {
+                    display: flex;
+                    height: 300px;
+                    align-items: center;
+                }
+              </style>
+        </style>
+    </ons-page>
+    <script src="js/login.js"></script>
+  </body>
+</html>

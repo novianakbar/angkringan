@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.mega.PMO" 
+    versionCode = "10"
+    version     = "1.0.0" >
+
+  <name>Angkringan Patriot</name>
+
+  <description>
+      Aplikasi Pemesanan Makanan di Angkringan Patriot
+  </description>
+
+  <author href="https://" email="ti18.0111.novian@gmail.com">
+      18.240.0111
+  </author>
+
+  <icon src="logo.png"/>
+
+  <!--  untuk id, name, deskrpsi dan author silakan diisi propertis kalian sendiri -->
+
+  <plugin name="cordova-plugin-whitelist" version="1" />
+    
+  <access origin="*" />
+  <allow-intent href="https://*/*" />
+  <allow-navigation href="https://*/*" />
+
+</widget>
